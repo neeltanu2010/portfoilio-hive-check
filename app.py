@@ -507,10 +507,7 @@ st.markdown(
 # DEFAULT STOCK LIST
 # -----------------------------
 DEFAULT_TICKERS = [
-    "ZYDUSLIFE", "DRREDDY", "OFSS", "INFY", "NTPC", "ACE", "GODFRYPHLP",
-    "ASIANPAINT", "PIDILITIND", "GRAVITA", "PETRONET", "CRISIL", "POLYCAB",
-    "SCHAEFFLER", "CUMMINSIND", "CHAMBLFERT", "DHANUKA", "KIRLOSENG",
-    "ARE&M", "JKCEMENT"
+    "ZYDUSLIFE", "DRREDDY", "OFSS", "INFY", "NTPC"
 ]
 
 # -----------------------------
