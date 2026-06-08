@@ -487,144 +487,172 @@ st.markdown(
    This applies only on mobile/tablet screens.
    ============================================================ */
 
+/* ============================================================
+   PORTFOLIO HIVE + BACKTESTER MOBILE READABILITY FIX
+   Desktop / PC layout remains unchanged.
+   Applies only on mobile screens.
+   ============================================================ */
+
 @media (max-width: 768px) {
 
     .block-container {
-        padding-top: 2.4rem !important;
+        padding-top: 2.7rem !important;
         padding-left: 0.85rem !important;
         padding-right: 0.85rem !important;
         padding-bottom: 3rem !important;
         max-width: 100% !important;
     }
 
-    .premium-title,
-    .main-title {
-        font-size: 2.05rem !important;
-        line-height: 1.22 !important;
+    .main-title,
+    .premium-title {
+        font-size: 1.95rem !important;
+        line-height: 1.25 !important;
         letter-spacing: -0.025em !important;
         padding-top: 0.45rem !important;
         padding-bottom: 0.25rem !important;
         margin-top: 0.4rem !important;
+        margin-bottom: 0.25rem !important;
         overflow: visible !important;
-        word-break: normal !important;
         white-space: normal !important;
-
-        /* Mobile readability: removes gradient clipping only on mobile */
+        word-break: normal !important;
+        color: #111827 !important;
         -webkit-text-fill-color: initial !important;
         background: none !important;
-        color: #111827 !important;
     }
 
-    .premium-subtitle,
-    .sub-title {
-        font-size: 0.96rem !important;
+    .sub-title,
+    .premium-subtitle {
+        font-size: 0.95rem !important;
         line-height: 1.6 !important;
         color: #374151 !important;
         margin-bottom: 1.1rem !important;
+        white-space: normal !important;
     }
 
-    .hero-box,
     .premium-hero,
-    .dialog-box,
-    .dialogue-card,
-    .input-panel,
-    .mode-box,
     .bee-box,
-    .chart-note-card {
-        padding: 16px 15px !important;
+    .mode-box,
+    .dialogue-card,
+    .nav-radio-card,
+    .backtest-hero,
+    .info-card,
+    .warning-card,
+    .compare-card {
+        padding: 15px 14px !important;
         border-radius: 20px !important;
         margin-bottom: 14px !important;
-        overflow: visible !important;
         min-height: auto !important;
-        background-color: rgba(255,255,255,0.96) !important;
+        overflow: visible !important;
+        background-color: rgba(255,255,255,0.97) !important;
+        color: #111827 !important;
     }
 
     .premium-hero h2,
-    .hero-box h2,
-    .box-title,
+    .backtest-hero h2,
+    .info-card h4,
+    .compare-card h4,
+    .mode-box h4,
     .dialogue-title,
-    .section-header {
-        font-size: 1.25rem !important;
+    .section-header,
+    h1, h2, h3, h4 {
+        font-size: 1.20rem !important;
         line-height: 1.35 !important;
         color: #111827 !important;
         -webkit-text-fill-color: initial !important;
         background: none !important;
-        word-break: normal !important;
         white-space: normal !important;
+        word-break: normal !important;
     }
 
     .premium-hero p,
-    .hero-box p,
-    .box-text,
+    .backtest-hero p,
+    .info-card,
+    .warning-card,
+    .compare-card p,
     .dialogue-body,
     .small-muted,
     p,
     li,
     label,
     .stMarkdown,
-    .stCaption {
-        font-size: 0.92rem !important;
+    .stCaption,
+    div[data-testid="stCaptionContainer"],
+    div[data-testid="stMarkdownContainer"] {
+        font-size: 0.90rem !important;
         line-height: 1.58 !important;
         color: #374151 !important;
         -webkit-text-fill-color: initial !important;
-        word-break: normal !important;
         white-space: normal !important;
+        word-break: normal !important;
     }
 
-    .pill {
+    .pill,
+    .period-chip {
         font-size: 0.72rem !important;
+        line-height: 1.25 !important;
         padding: 6px 9px !important;
         margin-right: 5px !important;
         margin-bottom: 6px !important;
-        color: #6B4A00 !important;
-        background: #FFF3BF !important;
         white-space: normal !important;
     }
 
+    .period-chip {
+        background: #111827 !important;
+        color: #FFF3BF !important;
+    }
+
     div[data-testid="stMetric"] {
-        padding: 13px 12px !important;
+        padding: 12px 11px !important;
         border-radius: 18px !important;
         overflow: visible !important;
     }
 
     div[data-testid="stMetricLabel"] {
-        font-size: 0.78rem !important;
+        font-size: 0.76rem !important;
+        line-height: 1.25 !important;
         color: #4B5563 !important;
         white-space: normal !important;
     }
 
     div[data-testid="stMetricValue"] {
-        font-size: 1.35rem !important;
+        font-size: 1.20rem !important;
+        line-height: 1.25 !important;
         color: #111827 !important;
         white-space: normal !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    div[data-testid="stRadio"] label,
+    div[data-testid="stCheckbox"] label,
+    div[data-testid="stSelectbox"] label,
+    div[data-testid="stDateInput"] label {
+        color: #111827 !important;
+        font-size: 0.90rem !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+    }
+
+    div[data-testid="stRadio"] p,
+    div[data-testid="stCheckbox"] p {
+        color: #111827 !important;
+        font-size: 0.88rem !important;
+        line-height: 1.35 !important;
     }
 
     div.stButton > button,
     div.stDownloadButton > button {
-        min-height: 2.8rem !important;
-        font-size: 0.86rem !important;
-        white-space: normal !important;
+        min-height: 2.75rem !important;
+        font-size: 0.84rem !important;
         line-height: 1.25 !important;
-        padding: 0.65rem 0.8rem !important;
+        white-space: normal !important;
+        padding: 0.65rem 0.75rem !important;
     }
 
-    div[data-testid="stTextInput"] input,
-    div[data-testid="stTextArea"] textarea {
+    div[data-testid="stTextArea"] textarea,
+    div[data-testid="stTextInput"] input {
         font-size: 0.92rem !important;
         color: #111827 !important;
         background: rgba(255,255,255,0.98) !important;
-    }
-
-    div[data-testid="stTabs"] [role="tablist"] {
-        overflow-x: auto !important;
-        gap: 6px !important;
-    }
-
-    div[data-testid="stTabs"] [role="tab"] {
-        min-width: max-content !important;
-        font-size: 0.8rem !important;
-        padding: 7px 10px !important;
-        white-space: nowrap !important;
     }
 
     .premium-table-wrap {
@@ -635,50 +663,83 @@ st.markdown(
     }
 
     table.premium-table {
-        font-size: 0.78rem !important;
-        min-width: 760px !important;
+        font-size: 0.76rem !important;
+        min-width: 820px !important;
     }
 
     table.premium-table thead th,
     table.premium-table tbody td {
-        padding: 10px 11px !important;
+        padding: 10px 10px !important;
         line-height: 1.38 !important;
         color: #111827 !important;
+        white-space: normal !important;
     }
 
     .badge {
-        font-size: 0.68rem !important;
+        font-size: 0.66rem !important;
         padding: 5px 8px !important;
         white-space: normal !important;
     }
 
-    div[data-testid="stPlotlyChart"] {
+    div[data-testid="stPlotlyChart"],
+    div[data-testid="stVegaLiteChart"] {
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch !important;
     }
 
-    div[data-testid="stPlotlyChart"] > div {
-        min-width: 620px !important;
+    div[data-testid="stPlotlyChart"] > div,
+    div[data-testid="stVegaLiteChart"] > div {
+        min-width: 640px !important;
     }
 
+    div[data-testid="stAlert"] {
+        font-size: 0.90rem !important;
+        line-height: 1.55 !important;
+        color: #111827 !important;
+    }
+
+    /* IMPORTANT: keeps Streamlit sidebar arrow working */
     section[data-testid="stSidebar"] {
-        display: none !important;
+        display: block !important;
+    }
+
+    section[data-testid="stSidebar"] textarea,
+    section[data-testid="stSidebar"] input {
+        color: #111827 !important;
+        background: rgba(255,255,255,0.98) !important;
+        font-size: 0.90rem !important;
+    }
+
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] .stCaption {
+        color: rgba(255,255,255,0.96) !important;
+        font-size: 0.88rem !important;
+        line-height: 1.4 !important;
+        white-space: normal !important;
     }
 }
 
 @media (max-width: 420px) {
 
-    .premium-title,
-    .main-title {
-        font-size: 1.75rem !important;
+    .main-title,
+    .premium-title {
+        font-size: 1.65rem !important;
+        line-height: 1.25 !important;
     }
 
     table.premium-table {
-        font-size: 0.72rem !important;
-        min-width: 700px !important;
+        font-size: 0.70rem !important;
+        min-width: 760px !important;
+    }
+
+    div[data-testid="stPlotlyChart"] > div,
+    div[data-testid="stVegaLiteChart"] > div {
+        min-width: 600px !important;
     }
 }
-
+    
+  
     </style>
     """,
     unsafe_allow_html=True,
@@ -1504,7 +1565,7 @@ def plot_backtest_curves(curves):
         plot_bgcolor="rgba(248,250,252,0.95)",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
         margin=dict(l=20, r=20, t=75, b=20),
-        font=dict(size=13),
+        font=dict(size=13, color="#111827"),
     )
     fig.update_xaxes(showgrid=True, gridcolor="rgba(148,163,184,0.20)")
     fig.update_yaxes(showgrid=True, gridcolor="rgba(148,163,184,0.20)")
@@ -1533,7 +1594,7 @@ def plot_metric_bars(metrics_df, metric_col, title, suffix=""):
         paper_bgcolor="rgba(255,255,255,0)",
         plot_bgcolor="rgba(255,251,235,0.35)",
         margin=dict(l=20, r=20, t=65, b=20),
-        font=dict(size=13),
+        font=dict(size=13, color="#111827"),
     )
     fig.update_yaxes(showgrid=True, gridcolor="rgba(148,163,184,0.20)")
     return fig
