@@ -10,6 +10,9 @@ import streamlit as st
 import yfinance as yf
 import plotly.graph_objects as go
 from bs4 import BeautifulSoup
+from common.protect_tool import require_tool_access
+
+user = require_tool_access("portfolio-hive-check")
 
 # ============================================================
 # PORTFOLIO HIVE CHECK
